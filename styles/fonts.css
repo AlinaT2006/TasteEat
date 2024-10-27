@@ -1,0 +1,10 @@
+@font-face {
+    font-family: Josefin Sans;
+    src: url(../fonts/JosefinSans-Regular.ttf);
+    font-weight: 400;
+}
+@font-face {
+    font-family: Cormorant Infant;
+    src: url(../fonts/CormorantInfant-Regular.ttf);
+    font-weight: 400;
+}
