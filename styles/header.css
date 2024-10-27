@@ -10,7 +10,7 @@
 .header__nav-top {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   position: relative;
 }
 
@@ -48,7 +48,7 @@
 .header__nav-list {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   margin-top: 70px;
 }
 
@@ -86,7 +86,7 @@
 @media screen and (max-width: 980px) {
   .header__nav-top {
     flex-direction: column;
-    gap: 15px;
+    gap: 20px;
   }
   .header__nav-top_call {
     padding: 15px 30px;
@@ -100,50 +100,66 @@
 }
 
 @media screen and (max-width: 980px) {
-    .header__nav-list_links {
-        gap: 30px;
-    }
-    .header__nav-list {
-        justify-content: space-between;
-    }
+  .header__nav-list_links {
+    gap: 30px;
+  }
+  .header__nav-list {
+    justify-content: space-between;
+  }
 }
 
-
 @media (max-width: 768px) {
-    .header__nav-list {
-      display: none;
-      flex-direction: column;
-      text-align: center;
-      background-color: #333;
-      position: absolute;
-      top: 100%; /* Позиция от верхней части header */
-      left: 0;
-      width: 100%;
-      padding-top: 20px;
-      padding-bottom: 20px;
-      transition: all 0.3s ease; /* Плавное появление */
-      margin-top: 0;
-    }
-  
-    .header__nav-toggle {
-      display: inline;
-    }
-  
-    .header__nav-list.show {
-      display: flex;
-    }
-  
-    .header__nav-list_links,
-    .header__nav-list_icons {
-      flex-direction: column;
-      gap: 10px; /* Слегка уменьшаем отступы */
-    }
-  
-    .header__nav-list_links li,
-    .header__nav-list_icons li {
-      padding: 10px 0;
-    }
-    .header__nav-top::after {
-        width: 0;
-    }
+  .header__nav-list {
+    display: none;
+    flex-direction: column;
+    text-align: center;
+    background-color: #333;
+    position: absolute;
+    top: 100%; /* Позиция от верхней части header */
+    left: 0;
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    transition: all 0.3s ease; /* Плавное появление */
+    margin-top: 0;
   }
+
+  .header__nav-toggle {
+    display: inline;
+  }
+
+  .header__nav-list.show {
+    display: flex;
+  }
+
+  .header__nav-list_links,
+  .header__nav-list_icons {
+    flex-direction: column;
+    gap: 10px; /* Слегка уменьшаем отступы */
+  }
+
+  .header__nav-list_links li,
+  .header__nav-list_icons li {
+    padding: 10px 0;
+  }
+  .header__nav-top::after {
+    width: 0;
+  }
+}
+
+@media (hover: hover) {
+  .header__nav-list_item-link:hover {
+    color: #e1b168;
+  }
+}
+@media (hover: none) {
+  .header__nav-list_item-link:hover {
+    color: #e1b168;
+  }
+}
+
+@media (max-width: 430px) {
+  .header__nav-top_logo img {
+    width: 100%;
+  }
+}

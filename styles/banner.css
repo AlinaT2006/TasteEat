@@ -1,0 +1,90 @@
+.banner {
+  background: #292e36;
+}
+
+.banner__wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+  border: 3px dashed #555555;
+}
+
+.banner__wrap-desc {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 30px;
+}
+
+.banner__wrap-desc_title {
+  font-family: Cormorant Infant;
+  font-size: 100px;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+.banner__wrap-desc_text {
+  font-family: Josefin Sans;
+  font-size: 20px;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+.banner_wrap-desc_btn {
+  font-family: Josefin Sans;
+  font-size: 22px;
+  font-weight: 400;
+  color: #e1b168;
+  padding: 20px 50px;
+  border: 2px solid #e1b168;
+}
+
+.banner__wrap-img img {
+  width: 100%;
+}
+.banner__wrap-img {
+  width: 100%;
+}
+
+@media screen and (max-width: 980px) {
+  .banner__wrap-desc_title {
+    font-size: 70px;
+  }
+  .banner_wrap-desc_btn {
+    padding: 15px 30px;
+  }
+}
+@media screen and (max-width: 980px) {
+  .banner__wrap {
+    flex-direction: column;
+    padding-top: 30px;
+  }
+  .banner__wrap-desc {
+    align-items: center;
+    justify-content: center;
+    max-width: 600px;
+    width: 100%;
+  }
+  .banner__wrap-desc_text {
+    text-align: center;
+  }
+  .banner__wrap-desc_title {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .banner__wrap-desc_title {
+    font-size: 50px;
+  }
+  .banner__wrap-desc_text {
+    font-size: 15px;
+  }
+  .banner_wrap-desc_btn {
+    font-size: 19px;
+  }
+  .banner__wrap {
+    gap: 30px;
+  }
+}

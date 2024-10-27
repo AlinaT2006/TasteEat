@@ -1,0 +1,92 @@
+.info {
+  background: #fff8f5;
+}
+
+.info__wrap {
+  padding: 90px 0 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.locate {
+  display: flex;
+  gap: 20px;
+}
+
+.locate__desc {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  justify-content: center;
+}
+
+.locate__desc-title {
+  font-family: Cormorant Infant;
+  font-size: 30px;
+  font-weight: 400;
+  color: #292e36;
+}
+
+.locate__desc-text {
+  font-family: Josefin Sans;
+  font-size: 20px;
+  font-weight: 400;
+  color: #555555;
+}
+.locate img {
+  transition: 0.3s;
+}
+
+.locate img:hover {
+  transform: scale(1.1);
+}
+
+@media screen and (max-width: 1180px) {
+  .info__wrap {
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 840px) {
+  .info__wrap {
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+    padding-top: 60px;
+  }
+
+  .locate {
+    flex-wrap: nowrap;
+    gap: 10px;
+    justify-content: center;
+  }
+
+  .locate img {
+    max-width: 80px;
+  }
+
+  .locate__desc {
+    text-align: center;
+    align-items: center;
+    max-width: 230px;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .locate img {
+    max-width: 60px;
+  }
+  .locate__desc-title {
+    font-size: 22px;
+  }
+  .locate__desc-text {
+    font-size: 18px;
+  }
+  .locate__desc {
+    max-width: 200px;
+  }
+  .locate {
+    gap: 20px;
+  }
+}
