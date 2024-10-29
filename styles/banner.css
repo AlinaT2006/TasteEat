@@ -6,7 +6,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 60px;
   border: 3px dashed #555555;
 }
 
@@ -29,6 +28,7 @@
   font-size: 20px;
   font-weight: 400;
   color: #ffffff;
+  line-height: 30px;
 }
 
 .banner_wrap-desc_btn {
@@ -41,9 +41,12 @@
 }
 
 .banner__wrap-img img {
+  max-width: 600px;
   width: 100%;
 }
 .banner__wrap-img {
+  display: flex;
+  justify-content: end;
   width: 100%;
 }
 
@@ -53,6 +56,9 @@
   }
   .banner_wrap-desc_btn {
     padding: 15px 30px;
+  }
+  .banner__wrap-img {
+    text-align: center;
   }
 }
 @media screen and (max-width: 980px) {

@@ -6,7 +6,7 @@
   padding: 90px 0 60px;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .locate {
@@ -45,6 +45,8 @@
 @media screen and (max-width: 1180px) {
   .info__wrap {
     flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
   }
 }
 
