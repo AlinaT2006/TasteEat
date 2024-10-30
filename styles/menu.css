@@ -137,6 +137,27 @@
   left: 105%;
 }
 
+
+@media screen and (max-width: 1380px) {
+  .cost {
+    right: -40%;
+  }
+  .menu__wrap-right_desc::after {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 1260px) {
+  .cost {
+    right: 5%;
+    top: 100%;
+    
+  }
+  .menu__wrap-right_desc::after {
+    width: 0;
+  }
+}
+
 @media screen and (max-width: 876px) {
   .menu__wrap {
     flex-direction: column;
@@ -173,6 +194,8 @@
     text-align: center;
   }
 }
+
+
 
 @media screen and (max-width: 480px) {
     .menu__wrap-right_desc::after {
