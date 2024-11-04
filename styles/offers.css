@@ -1,0 +1,222 @@
+.offers {
+  background: #ffffff;
+  padding: 145px 0 125px;
+}
+
+.offers__title {
+  font-family: "Josefin Sans";
+  font-size: 15px;
+  font-weight: 400;
+  color: #292e36;
+  border-top: 1px solid #e1b168;
+  border-bottom: 1px solid #e1b168;
+  width: fit-content;
+  padding: 5px 0;
+  margin-bottom: 10px;
+}
+
+.offers__wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.offers__wrap-desc {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: center;
+}
+
+.offers__wrap-desc-title {
+  font-family: "Cormorant Infant";
+  font-size: 2.5rem; /* 40px */
+  font-weight: 400;
+  color: #292e36;
+}
+
+.offers__wrap-desc-text {
+  font-family: "Josefin Sans";
+  font-size: 20px;
+  font-weight: 400;
+  color: #555555;
+  max-width: 800px;
+  width: 100%;
+  line-height: 30px;
+  text-align: center;
+}
+
+.offers__wrap-cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 30px;
+  margin-top: 40px;
+  grid-auto-rows: 400px;
+}
+
+/* Объединение стилей для карт */
+.offers__card1,
+.offers__card2 {
+  padding: 50px 40px 40px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  background-position: top center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.offers__card1 {
+  background-image: url(../img/card1bg.png);
+}
+
+.offers__card2 {
+  background-image: url(../img/card2bg.png);
+}
+
+.offers__card-img {
+  max-width: 300px;
+  height: 232px;
+  width: 100%;
+}
+
+.offers__card-img img {
+  width: 100%;
+}
+
+.offer__card-cost {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 40px;
+  left: 12%;
+  z-index: 1;
+  text-align: center;
+}
+
+.cost__img {
+  position: absolute;
+  top: 40px;
+  z-index: 0;
+}
+
+.cost__img img {
+  width: 100%;
+}
+
+.cost__pos1,
+.cost__pos3 {
+  font-family: "Josefin Sans";
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.cost__pos1 {
+  color: #292e36;
+}
+
+.cost__pos3 {
+  color: #ffffff;
+}
+
+.cost__pos2,
+.cost__pos4 {
+  font-family: "Cormorant Infant";
+  font-size: 60px;
+  font-weight: 400;
+}
+
+.cost__pos2 {
+  color: #292e36;
+}
+
+.cost__pos4 {
+  color: #ffffff;
+}
+
+.offers__card-desc_seil {
+  font-family: "Josefin Sans";
+  font-size: 15px;
+  font-weight: 400;
+  color: #292e36;
+  border-top: 1px solid #292e36;
+  border-bottom: 1px solid #292e36;
+  padding: 5px 0;
+  width: fit-content;
+}
+
+.offers__card-desc_name {
+  font-family: "Cormorant Infant";
+  font-size: 2.5rem; /* 40px */
+  font-weight: 400;
+  color: #292e36;
+  white-space: nowrap;
+}
+
+.offers__card-desc_text {
+  font-family: "Josefin Sans";
+  font-size: 20px;
+  font-weight: 400;
+  color: #555555;
+}
+
+.offers__desc-describe {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.offers__card-desc {
+  display: flex;
+  margin: 120px 20px 0 0;
+}
+
+/* Медиазапросы для адаптации */
+@media screen and (max-width: 1280px) {
+  .offers__wrap-cards {
+    grid-template-columns: 1fr;
+    grid-row-gap: 30px;
+  }
+}
+
+@media screen and (max-width: 658px) {
+  .offers__card-img {
+    height: 150px;
+    margin-bottom: 200px;
+  }
+  .offers__card-desc {
+    margin-right: 0;
+    max-width: 120px;
+    margin-top: 40px;
+  }
+  .cost__img {
+    max-width: 70px;
+  }
+  .cost__pos2 {
+    font-size: 30px;
+  }
+  .cost__pos4 {
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .offers__card-img {
+    max-width: 110px;
+    height: 100px;
+  }
+  .offers__card-desc_name {
+    font-size: 25px;
+  }
+  .offers__card-desc_text {
+    font-size: 15px;
+  }
+  .offers__card1,
+  .offers__card2 {
+    padding: 20px;
+  }
+  .offers__card-desc_seil {
+    text-wrap: nowrap;
+  }
+}
